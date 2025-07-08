@@ -1,9 +1,9 @@
 {
   "reports": [
     {
-      "input": "policy-pr-analysis-001",
-      "question": "政策提案プルリクエストの分析レポート",
-      "intro": "GitHub上の政策提案プルリクエストを分析し、主要なテーマや傾向を把握します。エネルギー政策、外交政策、その他の政策分野における市民からの提案内容を整理・分類します。",
+      "input": "energy-policy-pr-analysis-7-8",
+      "question": "エネルギー関連政策提案プルリクエスト分析7/8時点",
+      "intro": "GitHub上のエネルギー関連政策提案プルリクエストを分析し、主要なテーマや傾向を把握します。再生可能エネルギー、原子力政策、エネルギー効率化などの分野における市民からの提案内容を整理・分類します。",
       "csv_file_path": "/home/ubuntu/attachments/7cff05f1-3057-49a5-a1c6-21556e40f588/_prs.csv",
       "cluster": [5, 25],
       "provider": "openai",
