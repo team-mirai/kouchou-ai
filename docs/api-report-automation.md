@@ -210,10 +210,18 @@ python create_second_report.py
 
 ### 4. 複数レポート一括作成
 
+#### 従来方式（固定間隔）
 ```bash
 cd scripts
 export ADMIN_API_KEY="your-api-key"
 python automate_reports.py
+```
+
+#### インテリジェント方式（API監視）
+```bash
+cd scripts
+export ADMIN_API_KEY="your-api-key"
+python intelligent_report_automation.py
 ```
 
 ### 5. 進捗確認
@@ -238,22 +246,31 @@ python automate_reports.py
 
 ## メモリ最適化
 
-### 順次処理
+### インテリジェント待機
 
-大量のレポートを処理する際は、メモリ不足（OOM）を避けるため順次処理を推奨：
+大量のレポートを処理する際は、API状況を監視して適切なタイミングで次のレポートを作成：
 
 ```python
+def wait_for_processing_completion(client):
+    """処理中レポートの完了を待機"""
+    while True:
+        processing_reports = check_processing_reports(client)
+        if not processing_reports:
+            return True  # 処理中レポートなし
+        time.sleep(30)  # 30秒後に再チェック
+
 for i, config in enumerate(configs):
+    if i > 0:  # 最初のレポート以外は待機
+        wait_for_processing_completion(client)
     success = client.create_report(config)
-    if i < len(configs) - 1:
-        time.sleep(30)  # 30秒間隔
 ```
 
 ### 推奨設定
 
 - **workers**: `1` （並列処理数を制限）
-- **処理間隔**: 30秒以上
+- **待機方式**: API状況監視による動的待機
 - **cluster設定**: `[5, 25]` （適度なクラスタ数）
+- **タイムアウト**: 60分（長時間処理対応）
 
 ## トラブルシューティング
 
@@ -308,16 +325,16 @@ print(f"Token usage: {status.get('token_usage', 0)}")
 
 ## 実装例
 
-### 完全な自動化例
+### インテリジェント自動化例
 
 ```python
 #!/usr/bin/env python3
 import os
-import time
+from intelligent_report_automation import create_reports_intelligently, wait_for_processing_completion
 from automate_reports import KouchouAIClient, ReportConfig
 
-def create_policy_reports():
-    """政策分野別レポートを順次作成"""
+def create_policy_reports_intelligently():
+    """政策分野別レポートをAPI監視で順次作成"""
     
     # 環境設定
     api_key = os.getenv("ADMIN_API_KEY")
@@ -341,8 +358,13 @@ def create_policy_reports():
         }
     ]
     
-    # 順次処理
+    # インテリジェント順次処理
     for i, report_info in enumerate(reports):
+        # 前のレポート完了を待機
+        if i > 0:
+            print(f"Waiting for previous reports to complete...")
+            wait_for_processing_completion(client, max_wait_minutes=60)
+        
         config = ReportConfig(
             input=f"{report_info['topic'].lower()}-policy-analysis",
             question=f"{report_info['topic']}関連政策提案プルリクエスト分析7/8時点",
@@ -358,14 +380,9 @@ def create_policy_reports():
             print(f"✅ {report_info['topic']} report created successfully")
         else:
             print(f"❌ Failed to create {report_info['topic']} report")
-        
-        # 次のレポートまで待機
-        if i < len(reports) - 1:
-            print("Waiting 30 seconds...")
-            time.sleep(30)
 
 if __name__ == "__main__":
-    create_policy_reports()
+    create_policy_reports_intelligently()
 ```
 
 ## 参考資料

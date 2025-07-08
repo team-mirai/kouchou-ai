@@ -24,9 +24,17 @@ text,url
 ```
 
 ### 3. レポート作成
+
+#### 単一レポート作成
 ```bash
 cd scripts
 python create_second_report.py
+```
+
+#### インテリジェント自動化（推奨）
+```bash
+cd scripts
+python intelligent_report_automation.py
 ```
 
 ### 4. 進捗確認
