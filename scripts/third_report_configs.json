@@ -1,0 +1,180 @@
+{
+  "reports": [
+    {
+      "input": "教育関連政策提案プルリクエスト分析7/7時点",
+      "question": "教育関連政策提案プルリクエスト分析7/7時点",
+      "intro": "7/7時点の教育関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/Users/nishio/team-mirai-kouchou-ai/data/教育_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    },
+    {
+      "input": "ビジョン関連政策提案プルリクエスト分析7/7時点",
+      "question": "ビジョン関連政策提案プルリクエスト分析7/7時点",
+      "intro": "7/7時点のビジョン関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/Users/nishio/team-mirai-kouchou-ai/data/ビジョン_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    },
+    {
+      "input": "経済財政関連政策提案プルリクエスト分析7/7時点",
+      "question": "経済財政関連政策提案プルリクエスト分析7/7時点",
+      "intro": "7/7時点の経済財政関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/home/ubuntu/attachments/a020bee5-709d-4712-abca-5cdadec567f2/_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    },
+    {
+      "input": "子育て関連政策提案プルリクエスト分析7/7時点",
+      "question": "子育て関連政策提案プルリクエスト分析7/7時点",
+      "intro": "7/7時点の子育て関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/Users/nishio/team-mirai-kouchou-ai/data/子育て_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    },
+    {
+      "input": "その他政策関連政策提案プルリクエスト分析7/7時点",
+      "question": "その他政策関連政策提案プルリクエスト分析7/7時点",
+      "intro": "7/7時点のその他政策関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/Users/nishio/team-mirai-kouchou-ai/data/その他政策_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    },
+    {
+      "input": "行政改革関連政策提案プルリクエスト分析7/7時点",
+      "question": "行政改革関連政策提案プルリクエスト分析7/7時点",
+      "intro": "7/7時点の行政改革関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/Users/nishio/team-mirai-kouchou-ai/data/行政改革_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    },
+    {
+      "input": "デジタル民主主義関連政策提案プルリクエスト分析7/7時点",
+      "question": "デジタル民主主義関連政策提案プルリクエスト分析7/7時点",
+      "intro": "7/7時点のデジタル民主主義関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/Users/nishio/team-mirai-kouchou-ai/data/デジタル民主主義_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    },
+    {
+      "input": "医療関連政策提案プルリクエスト分析7/7時点",
+      "question": "医療関連政策提案プルリクエスト分析7/7時点",
+      "intro": "7/7時点の医療関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/Users/nishio/team-mirai-kouchou-ai/data/医療_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    },
+    {
+      "input": "科学技術関連政策提案プルリクエスト分析7/7時点",
+      "question": "科学技術関連政策提案プルリクエスト分析7/7時点",
+      "intro": "7/7時点の科学技術関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/Users/nishio/team-mirai-kouchou-ai/data/科学技術_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    },
+    {
+      "input": "産業政策関連政策提案プルリクエスト分析7/7時点",
+      "question": "産業政策関連政策提案プルリクエスト分析7/7時点",
+      "intro": "7/7時点の産業政策関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/Users/nishio/team-mirai-kouchou-ai/data/産業政策_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    },
+    {
+      "input": "福祉関連政策提案プルリクエスト分析7/7時点",
+      "question": "福祉関連政策提案プルリクエスト分析7/7時点",
+      "intro": "7/7時点の福祉関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/Users/nishio/team-mirai-kouchou-ai/data/福祉_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    }
+  ]
+}
