@@ -1,0 +1,20 @@
+{
+  "reports": [
+    {
+      "input": "科学技術関連政策提案プルリクエスト分析7/8時点",
+      "question": "科学技術関連政策提案プルリクエスト分析7/8時点",
+      "intro": "7/8時点の科学技術関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/home/ubuntu/attachments/48d47a45-98c8-4194-a281-d38d3842b226/_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    }
+  ]
+}
