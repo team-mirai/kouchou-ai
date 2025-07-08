@@ -1,0 +1,11 @@
+id,comment,source,url,category,region
+1,"公園の遊具を増やしてほしい","市民アンケート","https://example.com/survey1","公園・緑地","東京都"
+2,"歩道の段差を解消してほしい","市民相談","https://example.com/consultation1","道路・交通","神奈川県"
+3,"図書館の開館時間を延長してほしい","パブリックコメント","https://example.com/pubcom1","教育・文化","大阪府"
+4,"子育て支援センターを増設してほしい","住民説明会","https://example.com/meeting1","子育て支援","愛知県"
+5,"防災訓練の回数を増やしてほしい","防災会議","https://example.com/bousai1","防災・安全","福岡県"
+6,"高齢者向けの健康教室を開催してほしい","高齢者会議","https://example.com/senior1","高齢者支援","北海道"
+7,"自転車道の整備を進めてほしい","交通安全会議","https://example.com/traffic1","道路・交通","京都府"
+8,"ゴミ分別の説明をもっと分かりやすくしてほしい","環境委員会","https://example.com/env1","環境・衛生","兵庫県"
+9,"学校給食の地産地消を推進してほしい","教育委員会","https://example.com/edu1","教育・文化","静岡県"
+10,"商店街の活性化支援をお願いします","商工会議所","https://example.com/business1","産業・経済","広島県"

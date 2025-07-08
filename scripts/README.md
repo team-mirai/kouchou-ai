@@ -4,6 +4,30 @@
 
 ## スクリプト一覧
 
+### automate_reports.py
+複数のレポートを順次作成するための自動化スクリプト。API経由でレポート作成を行います。
+
+**特徴:**
+- 順次処理によりメモリ問題を回避
+- 進捗追跡とエラーハンドリング
+- 管理者APIエンドポイントとの直接統合
+- JSON設定ファイルによる設定可能なレポート設定
+
+**使用方法:**
+```bash
+# 環境変数を設定
+export ADMIN_API_KEY="your-admin-api-key"
+export KOUCHOU_AI_API_URL="https://api.salmonpebble-febdd0ee.japaneast.azurecontainerapps.io"
+
+# 自動化を実行
+python automate_reports.py
+```
+
+### report_configs.json
+作成するすべてのレポートを定義する設定ファイル。CSVデータパスと設定を含みます。
+
+**重要:** メモリ問題を避けるため、レポートは30秒間隔で順次処理されます。並列処理は行わないでください。
+
 ### fetch_reports.py
 既存のAPIサーバーからレポートデータを取得し、ローカル環境に保存するスクリプト。
 新しい環境へのデータ移行に使用します。
