@@ -46,7 +46,7 @@ graph TB
 ### エンドポイント
 
 ```
-POST https://api.salmonpebble-febdd0ee.japaneast.azurecontainerapps.io/admin/reports
+POST {API_BASE_URL}/admin/reports
 ```
 
 ### 認証
@@ -107,8 +107,8 @@ from automate_reports import KouchouAIClient, ReportConfig
 
 # クライアント初期化
 client = KouchouAIClient(
-    api_base_url="https://api.salmonpebble-febdd0ee.japaneast.azurecontainerapps.io",
-    admin_api_key="your-api-key"
+    api_base_url=os.getenv("KOUCHOU_AI_API_URL"),
+    admin_api_key=os.getenv("ADMIN_API_KEY")
 )
 
 # レポート作成
@@ -182,7 +182,7 @@ success = client.create_report(config)
 ```bash
 # 環境変数設定
 export ADMIN_API_KEY="your-admin-api-key"
-export KOUCHOU_AI_API_URL="https://api.salmonpebble-febdd0ee.japaneast.azurecontainerapps.io"
+export KOUCHOU_AI_API_URL="your-api-base-url"
 ```
 
 ### 2. CSVファイル準備
@@ -220,7 +220,7 @@ python automate_reports.py
 
 管理画面でレポートの処理状況を確認：
 ```
-https://client-admin.salmonpebble-febdd0ee.japaneast.azurecontainerapps.io/
+{ADMIN_INTERFACE_URL}
 ```
 
 ## 処理パイプライン
@@ -321,7 +321,7 @@ def create_policy_reports():
     
     # 環境設定
     api_key = os.getenv("ADMIN_API_KEY")
-    api_url = "https://api.salmonpebble-febdd0ee.japaneast.azurecontainerapps.io"
+    api_url = os.getenv("KOUCHOU_AI_API_URL")
     
     client = KouchouAIClient(api_url, api_key)
     
@@ -371,7 +371,6 @@ if __name__ == "__main__":
 ## 参考資料
 
 - [kouchou-ai GitHub Repository](https://github.com/team-mirai/kouchou-ai)
-- [管理画面](https://client-admin.salmonpebble-febdd0ee.japaneast.azurecontainerapps.io/)
 - [API仕様書](../server/src/routers/admin_report.py)
 
 ## 更新履歴
