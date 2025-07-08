@@ -1,0 +1,14 @@
+{
+  "reports": [
+    {
+      "input": "test-automation-single",
+      "question": "単一レポート自動化テスト",
+      "intro": "これは単一レポートの自動化テストです。市民からの意見を分析して、自動化システムが正常に動作することを確認します。",
+      "csv_file_path": "/home/ubuntu/repos/kouchou-ai/scripts/data/sample1.csv",
+      "cluster": [3, 15],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1
+    }
+  ]
+}

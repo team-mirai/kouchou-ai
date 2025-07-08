@@ -81,8 +81,8 @@ class KouchouAIClient:
                 timeout=30
             )
             
-            if response.status_code == 202:
-                print(f"  ✓ Report creation started successfully")
+            if response.status_code in [200, 202]:
+                print(f"  ✓ Report creation started successfully (HTTP {response.status_code})")
                 return True
             else:
                 print(f"  ✗ API request failed: {response.status_code} - {response.text}")
