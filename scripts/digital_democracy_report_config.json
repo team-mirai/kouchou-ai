@@ -1,0 +1,20 @@
+{
+  "reports": [
+    {
+      "input": "デジタル民主主義関連政策提案プルリクエスト分析7/8時点",
+      "question": "デジタル民主主義関連政策提案プルリクエスト分析7/8時点",
+      "intro": "7/8時点のデジタル民主主義関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/home/ubuntu/attachments/b33566b6-830d-4841-ae7f-5766652fe794/_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    }
+  ]
+}

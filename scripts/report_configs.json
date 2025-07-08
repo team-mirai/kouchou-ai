@@ -1,0 +1,124 @@
+{
+  "reports": [
+    {
+      "input": "test-automation-001",
+      "question": "自動化テスト用レポート",
+      "intro": "これは自動化スクリプトのテスト用レポートです。市民からの意見を分析します。",
+      "csv_file_path": "/home/ubuntu/repos/kouchou-ai/scripts/data/sample1.csv",
+      "cluster": [3, 15],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1
+    },
+    {
+      "input": "sample-report-002",
+      "question": "サンプルレポート2の質問",
+      "intro": "これはサンプルレポート2の説明です。",
+      "csv_file_path": "data/sample2.csv",
+      "cluster": [8, 40],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1
+    },
+    {
+      "input": "sample-report-003",
+      "question": "サンプルレポート3の質問",
+      "intro": "これはサンプルレポート3の説明です。",
+      "csv_file_path": "data/sample3.csv",
+      "cluster": [6, 30],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1
+    },
+    {
+      "input": "sample-report-004",
+      "question": "サンプルレポート4の質問",
+      "intro": "これはサンプルレポート4の説明です。",
+      "csv_file_path": "data/sample4.csv",
+      "cluster": [7, 35],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1
+    },
+    {
+      "input": "sample-report-005",
+      "question": "サンプルレポート5の質問",
+      "intro": "これはサンプルレポート5の説明です。",
+      "csv_file_path": "data/sample5.csv",
+      "cluster": [10, 50],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1
+    },
+    {
+      "input": "sample-report-006",
+      "question": "サンプルレポート6の質問",
+      "intro": "これはサンプルレポート6の説明です。",
+      "csv_file_path": "data/sample6.csv",
+      "cluster": [4, 20],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1
+    },
+    {
+      "input": "sample-report-007",
+      "question": "サンプルレポート7の質問",
+      "intro": "これはサンプルレポート7の説明です。",
+      "csv_file_path": "data/sample7.csv",
+      "cluster": [9, 45],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1
+    },
+    {
+      "input": "sample-report-008",
+      "question": "サンプルレポート8の質問",
+      "intro": "これはサンプルレポート8の説明です。",
+      "csv_file_path": "data/sample8.csv",
+      "cluster": [5, 25],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1
+    },
+    {
+      "input": "sample-report-009",
+      "question": "サンプルレポート9の質問",
+      "intro": "これはサンプルレポート9の説明です。",
+      "csv_file_path": "data/sample9.csv",
+      "cluster": [8, 40],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1
+    },
+    {
+      "input": "sample-report-010",
+      "question": "サンプルレポート10の質問",
+      "intro": "これはサンプルレポート10の説明です。",
+      "csv_file_path": "data/sample10.csv",
+      "cluster": [6, 30],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1
+    },
+    {
+      "input": "sample-report-011",
+      "question": "サンプルレポート11の質問",
+      "intro": "これはサンプルレポート11の説明です。",
+      "csv_file_path": "data/sample11.csv",
+      "cluster": [7, 35],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1
+    },
+    {
+      "input": "sample-report-012",
+      "question": "サンプルレポート12の質問",
+      "intro": "これはサンプルレポート12の説明です。",
+      "csv_file_path": "data/sample12.csv",
+      "cluster": [10, 50],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "reports": [
+    {
+      "input": "mynumber-policy-pr-analysis-7-8",
+      "question": "マイナンバーカード関連政策提案プルリクエスト分析7/8時点",
+      "intro": "7/8時点のマイナンバーカード関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/home/ubuntu/attachments/33cbf471-f3ba-447f-9e0d-4d4ed210fd63/_prs.csv",
+      "cluster": [5, 25],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "reports": [
+    {
+      "input": "教育関連政策提案プルリクエスト分析7/8時点",
+      "question": "教育関連政策提案プルリクエスト分析7/8時点",
+      "intro": "7/8時点の教育関連政策提案プルリクエストを分析しました。",
+      "csv_file_path": "/home/ubuntu/attachments/1b3f6cb3-5dc5-4000-9695-2507513aac49/_prs.csv",
+      "cluster": [
+        12,
+        144
+      ],
+      "provider": "openai",
+      "model": "gpt-4o-mini",
+      "workers": 1,
+      "is_pubcom": false,
+      "is_embedded_at_local": false,
+      "enable_source_link": true
+    }
+  ]
+}
