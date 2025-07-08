@@ -102,15 +102,23 @@ class KouchouAIClient:
         with open(csv_file_path, 'r', encoding='utf-8') as file:
             reader = csv.DictReader(file)
             for index, row in enumerate(reader):
-                comment = {
-                    "id": row.get("id", f"csv-{index + 1}"),
-                    "comment": row.get("comment", ""),
-                    "source": row.get("source"),
-                    "url": row.get("url")
-                }
+                if "text" in row and "url" in row:
+                    comment = {
+                        "id": f"pr-{index + 1}",
+                        "comment": row.get("text", ""),
+                        "source": "GitHub PR",
+                        "url": row.get("url", "")
+                    }
+                else:
+                    comment = {
+                        "id": row.get("id", f"csv-{index + 1}"),
+                        "comment": row.get("comment", ""),
+                        "source": row.get("source"),
+                        "url": row.get("url")
+                    }
                 
                 for key, value in row.items():
-                    if key not in ["id", "comment", "source", "url"] and value:
+                    if key not in ["id", "comment", "source", "url", "text"] and value:
                         comment[f"attribute_{key}"] = value
                 
                 comments.append(comment)
